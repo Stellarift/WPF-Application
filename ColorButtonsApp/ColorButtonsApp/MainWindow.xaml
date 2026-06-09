@@ -1,0 +1,58 @@
+﻿<Window x:Class="ColorButtonsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Цветные кнопки" Height="450" Width="700"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        
+        <TextBlock Grid.Row="0" Text="Выберите цвет:" FontSize="20" 
+                   HorizontalAlignment="Center" Margin="10"/>
+
+        
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                
+                <ColumnDefinition Width="4*"/>
+                
+                <ColumnDefinition Width="*"/>
+              
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="1" Background="#F0F0F0" CornerRadius="10" Padding="10">
+                <WrapPanel>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Navy" Foreground="Navy" FontWeight="Bold">Navy</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Blue" Foreground="Blue" FontWeight="Bold">Blue</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Aqua" Foreground="Aqua" FontWeight="Bold">Aqua</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Teal" Foreground="Teal" FontWeight="Bold">Teal</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Olive" Foreground="Olive" FontWeight="Bold">Olive</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Green" Foreground="Green" FontWeight="Bold">Green</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Lime" Foreground="Lime" FontWeight="Bold">Lime</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Yellow" Foreground="Yellow" FontWeight="Bold">Yellow</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Orange" Foreground="Orange" FontWeight="Bold">Orange</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Red" Foreground="Red" FontWeight="Bold">Red</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Maroon" Foreground="Maroon" FontWeight="Bold">Maroon</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Fuchsia" Foreground="Fuchsia" FontWeight="Bold">Fuchsia</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Purple" Foreground="Purple" FontWeight="Bold">Purple</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Black" Foreground="Black" FontWeight="Bold">Black</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Silver" Foreground="Silver" FontWeight="Bold">Silver</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="Gray" Foreground="Gray" FontWeight="Bold">Gray</Button>
+                    <Button Margin="2" Width="80" Height="35" Click="Button_Click" Tag="White" Foreground="White" Background="Black" FontWeight="Bold">White</Button>
+                </WrapPanel>
+            </Border>
+        </Grid>
+
+       
+        <Border Grid.Row="2" Background="#E0E0E0" Height="50" Margin="10,0,10,10" CornerRadius="5">
+            <TextBlock x:Name="txtInfo" Text="Нажмите на любую кнопку" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+    </Grid>
+</Window>

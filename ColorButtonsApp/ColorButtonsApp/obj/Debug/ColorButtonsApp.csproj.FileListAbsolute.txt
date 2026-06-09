@@ -1,0 +1,14 @@
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\bin\Debug\ColorButtonsApp.exe.config
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\bin\Debug\ColorButtonsApp.exe
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\bin\Debug\ColorButtonsApp.pdb
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp.csproj.AssemblyReference.cache
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\MainWindow.baml
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\MainWindow.g.cs
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\App.g.cs
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp_MarkupCompile.cache
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp.g.resources
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp.Properties.Resources.resources
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp.csproj.GenerateResource.cache
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp.csproj.CoreCompileInputs.cache
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp.exe
+C:\Users\romar\source\repos\ColorButtonsApp\ColorButtonsApp\obj\Debug\ColorButtonsApp.pdb
