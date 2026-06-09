@@ -1,0 +1,14 @@
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.pdb
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.AssemblyReference.cache
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\MainWindow.baml
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\MainWindow.g.cs
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\App.g.cs
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp_MarkupCompile.cache
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.g.resources
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.cache
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.exe
+C:\Users\romar\source\repos\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.pdb
