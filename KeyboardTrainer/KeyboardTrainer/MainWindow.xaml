@@ -1,0 +1,159 @@
+﻿<Window x:Class="KeyboardTrainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Клавиатурный тренажер" Height="650" Width="900"
+        WindowStartupLocation="CenterScreen"
+        KeyDown="Window_KeyDown"
+        KeyUp="Window_KeyUp">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        
+        <TextBlock Grid.Row="0" Text="КЛАВИАТУРНЫЙ ТРЕНАЖЕР" FontSize="24" 
+                   FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+        
+        <Border Grid.Row="1" Background="#F0F0F0" CornerRadius="10" Padding="15" Margin="0,0,0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                
+                <StackPanel Grid.Column="0">
+                    <TextBlock FontSize="14" FontWeight="Bold">Статистика:</TextBlock>
+                    <TextBlock x:Name="txtSpeed" Text="Скорость: 0 зн/мин" FontSize="16" Margin="0,5,0,0"/>
+                    <TextBlock x:Name="txtErrors" Text="Ошибки: 0" FontSize="16" Foreground="Red"/>
+                    <TextBlock x:Name="txtCorrect" Text="Правильно: 0" FontSize="16" Foreground="Green"/>
+                </StackPanel>
+
+                
+                <StackPanel Grid.Column="2">
+                    <TextBlock FontSize="14" FontWeight="Bold">Настройки:</TextBlock>
+                    <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                        <TextBlock Text="Длина текста:" VerticalAlignment="Center"/>
+                        <Slider x:Name="sliderLength" Minimum="10" Maximum="100" 
+                                Width="150" Margin="10,0" Value="30"/>
+                        <TextBlock x:Name="txtLengthValue" Text="30" Width="30"/>
+                    </StackPanel>
+                    <CheckBox x:Name="chkCaseSensitive" Content="Учитывать регистр" Margin="0,5,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        
+        <Border Grid.Row="2" Background="#E8F4FD" CornerRadius="10" Padding="15" Margin="0,0,0,10" BorderBrush="#4A90D9" BorderThickness="2">
+            <StackPanel>
+                <TextBlock Text="Текст для ввода:" FontSize="14" Foreground="Gray"/>
+                <TextBlock x:Name="txtTargetText" FontSize="20" FontFamily="Consolas" 
+                           TextWrapping="Wrap" Margin="0,5,0,0"/>
+                <TextBlock x:Name="txtInputText" FontSize="20" FontFamily="Consolas" 
+                           Foreground="Green" TextWrapping="Wrap" Margin="0,10,0,0"/>
+            </StackPanel>
+        </Border>
+
+        
+        <Border Grid.Row="3" Background="#2D2D2D" CornerRadius="10" Padding="10" Margin="0,0,0,10">
+            <StackPanel>
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,2">
+                    <Button x:Name="btnEsc" Content="Esc" Width="50" Height="40" Margin="1" Tag="Escape" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btn1" Content="1" Width="50" Height="40" Margin="1" Tag="D1" IsEnabled="False"/>
+                    <Button x:Name="btn2" Content="2" Width="50" Height="40" Margin="1" Tag="D2" IsEnabled="False"/>
+                    <Button x:Name="btn3" Content="3" Width="50" Height="40" Margin="1" Tag="D3" IsEnabled="False"/>
+                    <Button x:Name="btn4" Content="4" Width="50" Height="40" Margin="1" Tag="D4" IsEnabled="False"/>
+                    <Button x:Name="btn5" Content="5" Width="50" Height="40" Margin="1" Tag="D5" IsEnabled="False"/>
+                    <Button x:Name="btn6" Content="6" Width="50" Height="40" Margin="1" Tag="D6" IsEnabled="False"/>
+                    <Button x:Name="btn7" Content="7" Width="50" Height="40" Margin="1" Tag="D7" IsEnabled="False"/>
+                    <Button x:Name="btn8" Content="8" Width="50" Height="40" Margin="1" Tag="D8" IsEnabled="False"/>
+                    <Button x:Name="btn9" Content="9" Width="50" Height="40" Margin="1" Tag="D9" IsEnabled="False"/>
+                    <Button x:Name="btn0" Content="0" Width="50" Height="40" Margin="1" Tag="D0" IsEnabled="False"/>
+                    <Button x:Name="btnMinus" Content="-" Width="50" Height="40" Margin="1" Tag="OemMinus" IsEnabled="False"/>
+                    <Button x:Name="btnEquals" Content="=" Width="50" Height="40" Margin="1" Tag="OemPlus" IsEnabled="False"/>
+                    <Button x:Name="btnBackspace" Content="⌫" Width="70" Height="40" Margin="1" Tag="Back" IsEnabled="False" Background="#A52A2A"/>
+                </StackPanel>
+
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,2">
+                    <Button x:Name="btnTab" Content="Tab" Width="60" Height="40" Margin="1" Tag="Tab" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnQ" Content="Q" Width="50" Height="40" Margin="1" Tag="Q" IsEnabled="False"/>
+                    <Button x:Name="btnW" Content="W" Width="50" Height="40" Margin="1" Tag="W" IsEnabled="False"/>
+                    <Button x:Name="btnE" Content="E" Width="50" Height="40" Margin="1" Tag="E" IsEnabled="False"/>
+                    <Button x:Name="btnR" Content="R" Width="50" Height="40" Margin="1" Tag="R" IsEnabled="False"/>
+                    <Button x:Name="btnT" Content="T" Width="50" Height="40" Margin="1" Tag="T" IsEnabled="False"/>
+                    <Button x:Name="btnY" Content="Y" Width="50" Height="40" Margin="1" Tag="Y" IsEnabled="False"/>
+                    <Button x:Name="btnU" Content="U" Width="50" Height="40" Margin="1" Tag="U" IsEnabled="False"/>
+                    <Button x:Name="btnI" Content="I" Width="50" Height="40" Margin="1" Tag="I" IsEnabled="False"/>
+                    <Button x:Name="btnO" Content="O" Width="50" Height="40" Margin="1" Tag="O" IsEnabled="False"/>
+                    <Button x:Name="btnP" Content="P" Width="50" Height="40" Margin="1" Tag="P" IsEnabled="False"/>
+                    <Button x:Name="btnLBracket" Content="[" Width="50" Height="40" Margin="1" Tag="OemOpenBrackets" IsEnabled="False"/>
+                    <Button x:Name="btnRBracket" Content="]" Width="50" Height="40" Margin="1" Tag="OemCloseBrackets" IsEnabled="False"/>
+                    <Button x:Name="btnBackslash" Content="\" Width="50" Height="40" Margin="1" Tag="OemBackslash" IsEnabled="False"/>
+                </StackPanel>
+
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,2">
+                    <Button x:Name="btnCapsLock" Content="Caps" Width="70" Height="40" Margin="1" Tag="Capital" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnA" Content="A" Width="50" Height="40" Margin="1" Tag="A" IsEnabled="False"/>
+                    <Button x:Name="btnS" Content="S" Width="50" Height="40" Margin="1" Tag="S" IsEnabled="False"/>
+                    <Button x:Name="btnD" Content="D" Width="50" Height="40" Margin="1" Tag="D" IsEnabled="False"/>
+                    <Button x:Name="btnF" Content="F" Width="50" Height="40" Margin="1" Tag="F" IsEnabled="False"/>
+                    <Button x:Name="btnG" Content="G" Width="50" Height="40" Margin="1" Tag="G" IsEnabled="False"/>
+                    <Button x:Name="btnH" Content="H" Width="50" Height="40" Margin="1" Tag="H" IsEnabled="False"/>
+                    <Button x:Name="btnJ" Content="J" Width="50" Height="40" Margin="1" Tag="J" IsEnabled="False"/>
+                    <Button x:Name="btnK" Content="K" Width="50" Height="40" Margin="1" Tag="K" IsEnabled="False"/>
+                    <Button x:Name="btnL" Content="L" Width="50" Height="40" Margin="1" Tag="L" IsEnabled="False"/>
+                    <Button x:Name="btnSemicolon" Content=";" Width="50" Height="40" Margin="1" Tag="OemSemicolon" IsEnabled="False"/>
+                    <Button x:Name="btnQuote" Content="'" Width="50" Height="40" Margin="1" Tag="OemQuotes" IsEnabled="False"/>
+                    <Button x:Name="btnEnter" Content="↵ Enter" Width="90" Height="40" Margin="1" Tag="Return" IsEnabled="False" Background="#A52A2A"/>
+                </StackPanel>
+
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,2">
+                    <Button x:Name="btnShiftL" Content="Shift" Width="90" Height="40" Margin="1" Tag="LeftShift" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnZ" Content="Z" Width="50" Height="40" Margin="1" Tag="Z" IsEnabled="False"/>
+                    <Button x:Name="btnX" Content="X" Width="50" Height="40" Margin="1" Tag="X" IsEnabled="False"/>
+                    <Button x:Name="btnC" Content="C" Width="50" Height="40" Margin="1" Tag="C" IsEnabled="False"/>
+                    <Button x:Name="btnV" Content="V" Width="50" Height="40" Margin="1" Tag="V" IsEnabled="False"/>
+                    <Button x:Name="btnB" Content="B" Width="50" Height="40" Margin="1" Tag="B" IsEnabled="False"/>
+                    <Button x:Name="btnN" Content="N" Width="50" Height="40" Margin="1" Tag="N" IsEnabled="False"/>
+                    <Button x:Name="btnM" Content="M" Width="50" Height="40" Margin="1" Tag="M" IsEnabled="False"/>
+                    <Button x:Name="btnComma" Content="," Width="50" Height="40" Margin="1" Tag="OemComma" IsEnabled="False"/>
+                    <Button x:Name="btnPeriod" Content="." Width="50" Height="40" Margin="1" Tag="OemPeriod" IsEnabled="False"/>
+                    <Button x:Name="btnSlash" Content="/" Width="50" Height="40" Margin="1" Tag="OemQuestion" IsEnabled="False"/>
+                    <Button x:Name="btnShiftR" Content="Shift" Width="90" Height="40" Margin="1" Tag="RightShift" IsEnabled="False" Background="#555"/>
+                </StackPanel>
+
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,2">
+                    <Button x:Name="btnCtrlL" Content="Ctrl" Width="60" Height="40" Margin="1" Tag="LeftCtrl" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnWinL" Content="⊞" Width="50" Height="40" Margin="1" Tag="LWin" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnAltL" Content="Alt" Width="50" Height="40" Margin="1" Tag="LeftAlt" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnSpace" Content="Space" Width="300" Height="40" Margin="1" Tag="Space" IsEnabled="False"/>
+                    <Button x:Name="btnAltR" Content="Alt" Width="50" Height="40" Margin="1" Tag="RightAlt" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnWinR" Content="⊞" Width="50" Height="40" Margin="1" Tag="RWin" IsEnabled="False" Background="#555"/>
+                    <Button x:Name="btnCtrlR" Content="Ctrl" Width="60" Height="40" Margin="1" Tag="RightCtrl" IsEnabled="False" Background="#555"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+            <Button x:Name="btnStart" Content="▶ СТАРТ" Width="120" Height="40" 
+                    Margin="5" Background="#4CAF50" Foreground="White" FontWeight="Bold" Click="Start_Click"/>
+            <Button x:Name="btnStop" Content="⏹ СТОП" Width="120" Height="40" 
+                    Margin="5" Background="#F44336" Foreground="White" FontWeight="Bold" IsEnabled="False" Click="Stop_Click"/>
+            <Button x:Name="btnReset" Content="🔄 СБРОС" Width="120" Height="40" 
+                    Margin="5" Background="#FF9800" Foreground="White" FontWeight="Bold" Click="Reset_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

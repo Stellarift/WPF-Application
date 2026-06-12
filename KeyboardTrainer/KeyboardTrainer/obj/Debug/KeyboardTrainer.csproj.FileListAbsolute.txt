@@ -1,0 +1,14 @@
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\bin\Debug\KeyboardTrainer.exe.config
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\bin\Debug\KeyboardTrainer.exe
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\bin\Debug\KeyboardTrainer.pdb
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer.csproj.AssemblyReference.cache
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\MainWindow.baml
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\MainWindow.g.cs
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\App.g.cs
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer_MarkupCompile.cache
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer.g.resources
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer.Properties.Resources.resources
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer.csproj.GenerateResource.cache
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer.csproj.CoreCompileInputs.cache
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer.exe
+C:\Users\romar\source\repos\KeyboardTrainer\KeyboardTrainer\obj\Debug\KeyboardTrainer.pdb
