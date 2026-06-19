@@ -1,0 +1,111 @@
+﻿<Window x:Class="TextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Текстовый редактор" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Window.Resources>
+        <ContextMenu x:Key="EditorContextMenu">
+            <MenuItem Header="Отменить" Click="mnuUndo_Click"/>
+            <Separator/>
+            <MenuItem Header="Вырезать" Click="mnuCut_Click"/>
+            <MenuItem Header="Копировать" Click="mnuCopy_Click"/>
+            <MenuItem Header="Вставить" Click="mnuPaste_Click"/>
+            <Separator/>
+            <MenuItem Header="Выделить всё" Click="mnuSelectAll_Click"/>
+        </ContextMenu>
+    </Window.Resources>
+
+    <DockPanel>
+
+        
+        <Menu DockPanel.Dock="Top" Background="#2C3E50" Foreground="White">
+            <MenuItem Header="_Файл">
+                <MenuItem x:Name="mnuNew" Header="_Новый" InputGestureText="Ctrl+N" Click="mnuNew_Click"/>
+                <MenuItem x:Name="mnuOpen" Header="_Открыть..." InputGestureText="Ctrl+O" Click="mnuOpen_Click"/>
+                <MenuItem x:Name="mnuSave" Header="_Сохранить" InputGestureText="Ctrl+S" Click="mnuSave_Click"/>
+                <MenuItem x:Name="mnuSaveAs" Header="Сохранить _как..." InputGestureText="Ctrl+Shift+S" Click="mnuSaveAs_Click"/>
+                <Separator/>
+                <MenuItem x:Name="mnuExit" Header="_Выход" InputGestureText="Alt+F4" Click="mnuExit_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="_Правка">
+                <MenuItem x:Name="mnuUndo" Header="_Отменить" InputGestureText="Ctrl+Z" Click="mnuUndo_Click"/>
+                <Separator/>
+                <MenuItem x:Name="mnuCut" Header="Вы_резать" InputGestureText="Ctrl+X" Click="mnuCut_Click"/>
+                <MenuItem x:Name="mnuCopy" Header="_Копировать" InputGestureText="Ctrl+C" Click="mnuCopy_Click"/>
+                <MenuItem x:Name="mnuPaste" Header="_Вставить" InputGestureText="Ctrl+V" Click="mnuPaste_Click"/>
+                <Separator/>
+                <MenuItem x:Name="mnuSelectAll" Header="Выделить _всё" InputGestureText="Ctrl+A" Click="mnuSelectAll_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="_Настройки">
+                <MenuItem x:Name="mnuFont" Header="_Шрифт..." Click="mnuFont_Click"/>
+                <MenuItem x:Name="mnuColor" Header="Цвет _фона..." Click="mnuColor_Click"/>
+                <MenuItem x:Name="mnuForeColor" Header="Цвет _текста..." Click="mnuForeColor_Click"/>
+            </MenuItem>
+        </Menu>
+
+        
+        <ToolBar DockPanel.Dock="Top" Background="#E8E8E8" Height="40">
+            <Button x:Name="btnNew" ToolTip="Новый" Click="mnuNew_Click" Margin="2">
+                <TextBlock Text="Новый" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Button x:Name="btnOpen" ToolTip="Открыть" Click="mnuOpen_Click" Margin="2">
+                <TextBlock Text="Открыть" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Button x:Name="btnSave" ToolTip="Сохранить" Click="mnuSave_Click" Margin="2">
+                <TextBlock Text="Сохранить" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Separator/>
+            <Button x:Name="btnUndo" ToolTip="Отменить" Click="mnuUndo_Click" Margin="2">
+                <TextBlock Text="Отменить" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Separator/>
+            <Button x:Name="btnCut" ToolTip="Вырезать" Click="mnuCut_Click" Margin="2">
+                <TextBlock Text="Вырезать" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Button x:Name="btnCopy" ToolTip="Копировать" Click="mnuCopy_Click" Margin="2">
+                <TextBlock Text="Копировать" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Button x:Name="btnPaste" ToolTip="Вставить" Click="mnuPaste_Click" Margin="2">
+                <TextBlock Text="Вставить" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Separator/>
+            <Button x:Name="btnFont" ToolTip="Шрифт" Click="mnuFont_Click" Margin="2">
+                <TextBlock Text="Шрифт" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Button x:Name="btnColor" ToolTip="Цвет фона" Click="mnuColor_Click" Margin="2">
+                <TextBlock Text="Цвет фона" FontSize="12" FontWeight="Bold"/>
+            </Button>
+            <Button x:Name="btnForeColor" ToolTip="Цвет текста" Click="mnuForeColor_Click" Margin="2">
+                <TextBlock Text="Цвет текста" FontSize="12" FontWeight="Bold"/>
+            </Button>
+        </ToolBar>
+
+        
+        <TextBox x:Name="txtEditor" AcceptsReturn="True" TextWrapping="Wrap"
+                 FontFamily="Consolas" FontSize="14"
+                 Background="White" Foreground="Black"
+                 VerticalScrollBarVisibility="Auto"
+                 ContextMenu="{StaticResource EditorContextMenu}"
+                 TextChanged="txtEditor_TextChanged"
+                 SelectionChanged="txtEditor_SelectionChanged"/>
+
+        
+        <StatusBar DockPanel.Dock="Bottom" Background="#E8E8E8">
+            <StatusBarItem>
+                <TextBlock x:Name="statusPath" Text="Путь: (новый документ)"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock x:Name="statusCursor" Text="Строка: 1, Колонка: 1"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock x:Name="statusChars" Text="Символов: 0"/>
+            </StatusBarItem>
+        </StatusBar>
+    </DockPanel>
+</Window>
