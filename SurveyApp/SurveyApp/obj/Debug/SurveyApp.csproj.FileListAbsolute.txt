@@ -1,0 +1,14 @@
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\bin\Debug\SurveyApp.exe.config
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\bin\Debug\SurveyApp.exe
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\bin\Debug\SurveyApp.pdb
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp.csproj.AssemblyReference.cache
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\MainWindow.baml
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\MainWindow.g.cs
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\App.g.cs
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp_MarkupCompile.cache
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp.g.resources
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp.Properties.Resources.resources
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp.csproj.GenerateResource.cache
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp.csproj.CoreCompileInputs.cache
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp.exe
+C:\Users\romar\source\repos\SurveyApp\SurveyApp\obj\Debug\SurveyApp.pdb
