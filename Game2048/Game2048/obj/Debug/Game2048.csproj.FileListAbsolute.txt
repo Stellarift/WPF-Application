@@ -1,0 +1,14 @@
+C:\Users\romar\source\repos\Game2048\Game2048\bin\Debug\Game2048.exe.config
+C:\Users\romar\source\repos\Game2048\Game2048\bin\Debug\Game2048.exe
+C:\Users\romar\source\repos\Game2048\Game2048\bin\Debug\Game2048.pdb
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048.csproj.AssemblyReference.cache
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\MainWindow.baml
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\MainWindow.g.cs
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\App.g.cs
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048_MarkupCompile.cache
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048.g.resources
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048.Properties.Resources.resources
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048.csproj.GenerateResource.cache
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048.csproj.CoreCompileInputs.cache
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048.exe
+C:\Users\romar\source\repos\Game2048\Game2048\obj\Debug\Game2048.pdb
